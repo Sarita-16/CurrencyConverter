@@ -4,6 +4,73 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CurrencyConveter</title>
+    <link rel="stylesheet" href="currencyConverter.css" />
+
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
   </head>
-  <body></body>
+  <body>
+    <header>
+      <a href="index.html">Currency Converter</a>
+    </header>
+
+    <div class="wrapper">
+      <div class="currencyConverter">
+        <h3>Currency Converter</h3>
+        <form action="#">
+          <div class="input-group">
+            <input type="number" required />
+            <label>Enter Amount</label>
+          </div>
+
+          <div class="to-form">
+            <div class="fromSection">
+              <label for="country">From<i class="bx bx-map"></i></label>
+              <select name="country" id="country">
+                <option value="india">INR</option>
+                <option value="southKorea">KRW</option>
+                <option value="uae">AED</option>
+                <option value="america">USD</option>
+                <option value="brazil">BRL</option>
+                <option value="nepal">NPR</option>
+                <option value="argentina">ARS</option>
+                <option value="australia">AUD</option>
+                <option value="spain">ESP</option>
+                <option value="germany">EUR</option>
+              </select>
+            </div>
+
+            <i class="bx bx-transfer-alt"></i>
+
+            <div class="toSection">
+              <label for="country">To<i class="bx bx-map"></i></label>
+              <select name="country" id="country">
+                <option value="india">INR</option>
+                <option value="southKorea">KRW</option>
+                <option value="uae">AED</option>
+                <option value="america">USD</option>
+                <option value="brazil">BRL</option>
+                <option value="nepal">NPR</option>
+                <option value="argentina">ARS</option>
+                <option value="australia">AUD</option>
+                <option value="spain">ESP</option>
+                <option value="germany">EUR</option>
+              </select>
+            </div>
+          </div>
+
+          <button type="submit" class="btn">Convert</button>
+
+          <div class="result-group">
+            <input type="number" />
+            <label>Converted Amount</label>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <script src="currencyConverter.js"></script>
+  </body>
 </html>
