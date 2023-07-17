@@ -10,6 +10,11 @@
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
       rel="stylesheet"
     />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
   </head>
   <body>
     <header>
@@ -18,7 +23,6 @@
 
     <div class="wrapper">
       <div class="currencyConverter">
-        <h3>Currency Converter</h3>
         <form action="#">
           <div class="input-group">
             <input type="number" required />
@@ -28,36 +32,44 @@
           <div class="to-form">
             <div class="fromSection">
               <label for="country">From<i class="bx bx-map"></i></label>
-              <select name="country" id="country">
-                <option value="india">INR</option>
-                <option value="southKorea">KRW</option>
-                <option value="uae">AED</option>
-                <option value="america">USD</option>
-                <option value="brazil">BRL</option>
-                <option value="nepal">NPR</option>
-                <option value="argentina">ARS</option>
-                <option value="australia">AUD</option>
-                <option value="spain">ESP</option>
-                <option value="germany">EUR</option>
-              </select>
+              <div class="countryName">
+                <img src="https://flagsapi.com/IN/flat/64.png" alt="" />
+                <select name="country" id="country">
+                  <option value="india">INR</option>
+                  <option value="southKorea">KRW</option>
+                  <option value="uae">AED</option>
+                  <option value="america">USD</option>
+                  <option value="brazil">BRL</option>
+                  <option value="nepal">NPR</option>
+                  <option value="argentina">ARS</option>
+                  <option value="australia">AUD</option>
+                  <option value="spain">ESP</option>
+                  <option value="germany">EUR</option>
+                </select>
+              </div>
             </div>
 
-            <i class="bx bx-transfer-alt"></i>
+            <div class="converter">
+              <i class="bx bx-transfer-alt"></i>
+            </div>
 
             <div class="toSection">
               <label for="country">To<i class="bx bx-map"></i></label>
-              <select name="country" id="country">
-                <option value="india">INR</option>
-                <option value="southKorea">KRW</option>
-                <option value="uae">AED</option>
-                <option value="america">USD</option>
-                <option value="brazil">BRL</option>
-                <option value="nepal">NPR</option>
-                <option value="argentina">ARS</option>
-                <option value="australia">AUD</option>
-                <option value="spain">ESP</option>
-                <option value="germany">EUR</option>
-              </select>
+              <div class="countryName">
+                <img src="https://flagsapi.com/KR/flat/64.png" alt="" />
+                <select name="country" id="country">
+                  <option value="india">INR</option>
+                  <option value="southKorea">KRW</option>
+                  <option value="uae">AED</option>
+                  <option value="america">USD</option>
+                  <option value="brazil">BRL</option>
+                  <option value="nepal">NPR</option>
+                  <option value="argentina">ARS</option>
+                  <option value="australia">AUD</option>
+                  <option value="spain">ESP</option>
+                  <option value="germany">EUR</option>
+                </select>
+              </div>
             </div>
           </div>
 
