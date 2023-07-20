@@ -33,9 +33,9 @@
             <div class="fromSection">
               <label for="country">From<i class="bx bx-map"></i></label>
               <div class="countryName">
-                <img src="https://flagsapi.com/IN/flat/64.png" alt="" />
-                <select name="country" id="country">
-                  <option value="india">INR</option>
+                <img src="https://flagsapi.com/IN/flat/64.png" alt="flag" />
+                <select>
+                  <!-- <option value="india">INR</option>
                   <option value="southKorea">KRW</option>
                   <option value="uae">AED</option>
                   <option value="america">USD</option>
@@ -44,7 +44,7 @@
                   <option value="argentina">ARS</option>
                   <option value="australia">AUD</option>
                   <option value="spain">ESP</option>
-                  <option value="germany">EUR</option>
+                  <option value="germany">EUR</option>  -->
                 </select>
               </div>
             </div>
@@ -56,9 +56,9 @@
             <div class="toSection">
               <label for="country">To<i class="bx bx-map"></i></label>
               <div class="countryName">
-                <img src="https://flagsapi.com/KR/flat/64.png" alt="" />
-                <select name="country" id="country">
-                  <option value="india">INR</option>
+                <img src="https://flagsapi.com/KR/flat/64.png" alt="flag" />
+                <select>
+                  <!-- <option value="india">INR</option>
                   <option value="southKorea">KRW</option>
                   <option value="uae">AED</option>
                   <option value="america">USD</option>
@@ -67,7 +67,7 @@
                   <option value="argentina">ARS</option>
                   <option value="australia">AUD</option>
                   <option value="spain">ESP</option>
-                  <option value="germany">EUR</option>
+                  <option value="japan">JPY</option>  -->
                 </select>
               </div>
             </div>
@@ -76,7 +76,13 @@
           <button type="submit" class="btn">Convert</button>
 
           <div class="result-group">
-            <input type="number" />
+            <div class="result-amount">
+              <input
+                type="number"
+                value=""
+                placeholder="Getting Exchange Rate ....."
+              />
+            </div>
             <label>Converted Amount</label>
           </div>
         </form>
@@ -84,5 +90,6 @@
     </div>
 
     <script src="currencyConverter.js"></script>
+    <script src="country-list.js"></script>
   </body>
 </html>
