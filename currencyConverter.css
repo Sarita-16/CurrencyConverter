@@ -149,6 +149,7 @@ header a {
 .countryName select {
     outline: none;
     border: none;
+    margin-left: 0.5rem;
 }
 
 
@@ -215,3 +216,11 @@ header a {
     margin-top: 3rem;
 }   
 
+
+
+
+.result-amount input::-webkit-outer-spin-button,
+.result-amount input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
